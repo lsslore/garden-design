@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Sedan+SC&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Judson:ital,wght@0,400;0,700;1,400&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header y navegación */
+
+header {
+  font-family: "Sansita", Tahoma, sans-serif;
+  background: linear-gradient(to bottom, #1b1401, hsl(36, 32%, 45%));
+  color: rgb(241, 245, 242);
+  padding: 1rem;
+  
+}
+
+header img {
+  width: 13%;
+
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  justify-content: center;
+
+}
+
+nav a:hover {
+  color: #f1d177;
+  transform: translateY(-15px);
+  box-shadow: 0 8px 16px rgba(240, 186, 79, 0.9);
+  border-radius: 5px;
+  
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+main h2 {
+  font-family: "Crimson Text", serif;
+  text-align: center;
+  color: #5f2c02;
+  font-size: 34px;
+}
+
+
+.carrito-icono a {
+  color: white;
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.carrito-icono a:hover {
+  color: #f1d177;
+  transform: scale(1.2);
+}
+
+
+.video {
+  background-color: #b19c70;
+}
+
+.video video {
+ border-radius: 15px;
+ width: 100%;
+ height: auto;
+ max-width: 100%;
+ display: block;
+}
+
+
+/* Secciones */
+
+
+section {
+  padding: 2rem;
+}
+
+.titulo {
+  background-color: #c4a576;
+}
+
+.titulo p {
+  font-family: 'Judson', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  
+}
+
+#quienes-somos {
+  background-color: #816d41;
+}
+
+#quienes-somos p {
+  font-family: 'Judson', Tahoma, sans-serif;
+  font-size: 24px;
+  color: #faf9f8;
+  padding-bottom: 30px;
+  text-align: center;
+ 
+} 
+
+#quienes-somos img {
+ border-radius: 15px;
+ height: auto;
+ max-width: 100%;
+ 
+}
+
+#productos {
+  
+  background-color: #927a43;
+}
+
+#productos h2 {
+  padding: 30px;
+
+}
+
+#productos .productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  border-radius: 10px;
+  
+}
+
+.card {
+  border: 1px solid #fdae02;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.9);
+  border-radius: 10px;
+  background-color: #8f826f;
+} 
+
+.card p {
+  font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #413501;
+}
+
+.card h3, h4 {
+  font-family: "Crimson Text", serif;
+  color: rgb(70, 32, 1);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+.card button {
+  font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
+  background-color: #795b01;
+  color: rgb(250, 249, 243);
+  border: 1px solid rgb(238, 193, 109);
+  padding: 9px;
+  cursor: pointer;
+  border-radius: 7px;
+  
+}  
+  
+
+.card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(248, 192, 79, 0.9);
+  border-radius: 5px;
+  color: #f5c867;
+  
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(247, 196, 101, 0.9);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease; /* suaviza el cambio */
+}
+
+.card img:hover {
+  transform: scale(1.5); /* agranda un 10% */
+}
+
+/* Reseñas con Grid */
+
+.grid-reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+
+}
+
+#reseñas  {
+  background-color: #ac9351;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#reseñas h2 {
+  padding-bottom: 30px;
+}
+
+.reseña {
+  font-family: 'Montserrat', Verdana, Tahoma, sans-serif ;
+  color: #695b19;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #e2d1a2;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+/* Formulario / Contacto */
+
+#contacto {
+  background-color: #91805c;
+}
+
+.parrafo {
+  font-family: 'Judson', Verdana, Geneva, Tahoma, sans-serif;
+  color: #f8f5f3;
+  padding: 30px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  font-weight: bold;
+  color: #633501;
+  background-color: #c4a76a;
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+  border: 3px solid #be8003;
+  border-radius: 20px;
+  margin: auto;
+}
+
+textarea {
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(235, 219, 177);
+  border: 2px solid rgb(190, 149, 73);
+
+}
+
+input {   
+  padding: 7px;
+  border: 2px solid rgb(190, 147, 68);
+  border-radius: 8px;
+  background-color: rgb(240, 230, 189);
+
+}
+
+.input-element {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+  
+}
+
+select {
+  color: #754823;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 10px 0 0 0;
+  background-color: rgb(219, 208, 171);
+  border: 2px solid rgb(190, 147, 66);
+
+}
+
+button[type="submit"]{
+
+  display: block;
+  width: 50%;
+  margin: 15px auto;
+  height: 35px;
+  font-size: 18px;
+  background-color: #614602;
+  border-color: rgb(167, 115, 3);
+  min-width: auto;
+  color: white;
+  border-radius: 8px;
+  
+}
+
+form button:hover {
+  background-color: #a17d06;
+}
+
+/* Botón volver */
+
+.volver button:hover {
+  background-color: #867308;
+  color: #c2820b;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.volver button {
+  margin-top: 50px;
+  background-color: #583001;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 2px solid rgba(189, 130, 4, 0.884);
+
+}
+
+/* Footer */
+.footer {
+  background-color: #422e02;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 32px 0;
+  gap: 16px 0;
+}
+
+.footer-links {
+  width: 30%;
+  font-size:  clamp(16px, 8vw, 32px);
+}
+
+.footer-ul {
+  list-style-type: none;
+  flex-direction: column;
+  font-family: 'Montserrat', Courier, monospace;
+
+}
+
+.footer-mapa {
+ width: 40%;
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+.footer-redes {
+  width: 30%;
+ 
+}
+
+.footer-redes a {
+  color: #f0d69d;
+  width: 20px;
+  font-size: 16px;
+}
+
+.footer-redes h3 {
+  color: rgb(248, 243, 234);
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 22px;
+}
+
+.footer-direccion {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #ecd6ab;
+  padding: 3px;
+}
+
+.icono-social i {
+  padding: 10px;
+}
+
+.icono-social i:hover {
+  color: #dd7e03;
+}
+
+.copyright {
+  font-family: Roboto, sans-serif;
+  font-size: clamp(8px, 4vw, 16px);
+  text-align: center;
+  color: rgb(230, 221, 203);
+  
+}
+.footer-copy {
+  background-color: #201800;
+}
+
+/* Responsivo */
+
+/* Teléfonos pequeños a tablets: 320px a 768px */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-nav {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  header img {
+    width: 130px;
+    justify-content: center;
+  }
+
+  .productos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+}
+
+/* Tablets a laptops: 768.1px a 1024px */
+@media only screen and (min-width: 768.1px) and (max-width: 1024px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo-nav {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  .productos-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  form {
+    width: 70%;
+  }
+  
+  footer ul {
+    flex-direction: column;
+  }
+  
+}
+
+/*Laptops grandes a pantallas de escritorio: 1024.1px a 1800px */
+@media only screen and (min-width: 1024.1px) and (max-width: 1800px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo-nav {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  header img {
+    width: 180px;
+  }
+
+  .productos-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  form {
+    width: 60%;
+  }
+ 
+}
